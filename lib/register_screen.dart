@@ -34,21 +34,21 @@ class _LoginScreenState extends State<RegisterScreen> {
                     circle: true,
                     child: Image.asset('assets/7535647.jpg', height: 80, width: 80,),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   CustomContainerTextfromfield(
                     color: Colors.white,
                       child: CustomTextFormField(
                           icon: Icons.person,
                           labelText: "Username",
                          )),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   CustomContainerTextfromfield(
                       color: Colors.white,
                       child: CustomTextFormField(
                           icon: Icons.email,
                           labelText: "Email",
                          )),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
               CustomContainerTextfromfield(
                   color: Colors.white,
                   child: CustomTextFormField(
@@ -56,25 +56,25 @@ class _LoginScreenState extends State<RegisterScreen> {
                       icon: Icons.lock,
                       labelText: "Password",
                       )),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   CustumButton(
                     child: CustomButtonwithoutcontainer(
                       text: 'Register',
                     )
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("If you have an account?"),
+                      const Text("If you have an account?"),
                       TextButton(
                         onPressed: () {
                           Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => LoginScreen()),
+                            MaterialPageRoute(builder: (context) => const LoginScreen()),
                           );
                         },
-                        child: Text('Login'),
+                        child: const Text('Login'),
                       ),
                     ],
                   ),

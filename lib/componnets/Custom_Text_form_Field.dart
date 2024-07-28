@@ -33,7 +33,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         border: InputBorder.none,
         prefixIcon: Icon(widget.icon, color: Colors.blue),
         labelText: widget.labelText,
-        labelStyle: TextStyle(color: Colors.blue),
+        labelStyle: const TextStyle(color: Colors.blue),
         suffixIcon: widget.initialIsObscure
             ? IconButton(
           icon: Icon(

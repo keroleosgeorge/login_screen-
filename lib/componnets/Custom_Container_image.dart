@@ -8,21 +8,21 @@ class CustomContainerImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  circle ?Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.lightBlue,
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
             color: Colors.blue.withOpacity(0.5),
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
             blurRadius: 10,
           ),
         ],
       ),
       child: child,
     ) : Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         color: Colors.lightBlue,
@@ -30,13 +30,13 @@ class CustomContainerImage extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.blue.shade900.withOpacity(0.5),
-            offset: Offset(4, 4),
+            offset: const Offset(4, 4),
             blurRadius: 15,
             spreadRadius: 1,
           ),
           BoxShadow(
             color: Colors.white.withOpacity(0.5),
-            offset: Offset(-4, -4),
+            offset: const Offset(-4, -4),
             blurRadius: 15,
             spreadRadius: 1,
           ),

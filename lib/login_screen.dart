@@ -30,16 +30,16 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 CustomContainerImage(
                   circle: true,
-                  child: Icon(Icons.person, size: 80, color: Colors.white),
+                  child: const Icon(Icons.person, size: 80, color: Colors.white),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 CustomContainerTextfromfield(
                   color: Colors.blue.shade50,
                     child: CustomTextFormField(
                         icon: Icons.person,
                         labelText: "Username",
                         )),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 CustomContainerTextfromfield(
                   color: Colors.blue.shade50,
                   child: CustomTextFormField(
@@ -49,11 +49,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Forgot your password?'),
+                    const Text('Forgot your password?'),
                     TextButton(
                       onPressed: () {
                         Navigator.pushReplacement(
@@ -62,25 +62,25 @@ class _LoginScreenState extends State<LoginScreen> {
                               builder: (context) => const ResetPass()),
                         );
                       },
-                      child: Text('Reset Password'),
+                      child: const Text('Reset Password'),
                     ),
                   ],
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 CustumButton(
                   child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Login',
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Don't have an account?"),
+                    const Text("Don't have an account?"),
                     TextButton(
                       onPressed: () {
                         Navigator.pushReplacement(
@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               builder: (context) => const RegisterScreen()),
                         );
                       },
-                      child: Text('Register'),
+                      child: const Text('Register'),
                     ),
                   ],
                 ),

@@ -7,14 +7,14 @@ Column? column;
   Widget build(BuildContext context) {
     return Container(
       width: 350, // عرض ثابت للحاوية
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
           BoxShadow(
             color: Colors.blue.withOpacity(0.2),
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
             blurRadius: 10,
           ),
         ],

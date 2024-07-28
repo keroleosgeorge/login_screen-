@@ -32,7 +32,7 @@ class _LoginScreenState extends State<ResetPass> {
                 children: [
               CustomContainerImage(
                 circle: false,
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Reset Password",
                         style: TextStyle(
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<ResetPass> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   CustomContainerTextfromfield(
                     color: Colors.white,
                     child: CustomTextFormField(
@@ -53,7 +53,7 @@ class _LoginScreenState extends State<ResetPass> {
                     )
                   ),
 
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
 
 
                   CustumButton(
@@ -61,11 +61,11 @@ class _LoginScreenState extends State<ResetPass> {
                       text: 'Reset Password',
                     )
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Don't have an account?"),
+                      const Text("Don't have an account?"),
                       TextButton(
                         onPressed: () {
                           Navigator.push(
@@ -73,7 +73,7 @@ class _LoginScreenState extends State<ResetPass> {
                             MaterialPageRoute(builder: (context) => const RegisterScreen()),
                           );
                         },
-                        child: Text('Register'),
+                        child: const Text('Register'),
                       ),
                     ],
                   ),

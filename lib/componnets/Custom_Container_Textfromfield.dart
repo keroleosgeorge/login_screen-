@@ -10,19 +10,19 @@ class CustomContainerTextfromfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         decoration: BoxDecoration(
           color:color,
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
               color: Colors.blue.withOpacity(0.2),
-              offset: Offset(0, 3),
+              offset: const Offset(3, 0),
               blurRadius: 6,
             ),
             BoxShadow(
               color: Colors.blue.withOpacity(0.2),
-              offset: Offset(3, 0),
+              offset: const Offset(3, 0),
               blurRadius: 6,
             ),
           ],
