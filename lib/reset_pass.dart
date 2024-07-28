@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'componnets/Custom_Buttonwithoutcontainer.dart';
+import 'componnets/Custom_Container_Contain.dart';
+import 'componnets/Custom_Container_Textfromfield.dart';
+import 'componnets/Custom_Container_image.dart';
+import 'componnets/Custom_Text_form_Field.dart';
+import 'componnets/Custum_Button.dart';
 import 'register_screen.dart';
 
 class ResetPass extends StatefulWidget {
@@ -20,51 +26,12 @@ class _LoginScreenState extends State<ResetPass> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Center(
-            child: Container(
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.lightBlueAccent,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.blue.shade900.withOpacity(0.5),
-                    offset: Offset(4, 4),
-                    blurRadius: 15,
-                    spreadRadius: 1,
-                  ),
-                  BoxShadow(
-                    color: Colors.white.withOpacity(0.5),
-                    offset: Offset(-4, -4),
-                    blurRadius: 15,
-                    spreadRadius: 1,
-                  ),
-                ],
-              ),
-              child: Column(
+            child: Container_For_All_Widgets(
+              column: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.rectangle,
-                      color: Colors.lightBlue,
-                      borderRadius:   BorderRadius.circular(15),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.blue.shade900.withOpacity(0.5),
-                          offset: Offset(4, 4),
-                          blurRadius: 15,
-                          spreadRadius: 1,
-                        ),
-                        BoxShadow(
-                          color: Colors.white.withOpacity(0.5),
-                          offset: Offset(-4, -4),
-                          blurRadius: 15,
-                          spreadRadius: 1,
-                        ),
-                      ],
-                    ),
+              CustomContainerImage(
+                circle: false,
                     child: Center(
                       child: Text(
                         "Reset Password",
@@ -77,74 +44,22 @@ class _LoginScreenState extends State<ResetPass> {
                     ),
                   ),
                   SizedBox(height: 20),
-                  Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.blue.shade900.withOpacity(0.5),
-                            offset: Offset(4, 4),
-                            blurRadius: 15,
-                            spreadRadius: 1,
-                          ),
-                          BoxShadow(
-                            color: Colors.white.withOpacity(0.5),
-                            offset: Offset(-4, -4),
-                            blurRadius: 15,
-                            spreadRadius: 1,
-                          ),
-                        ]
-                    ),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.person),
-                        labelText: "Email",
-                        hintText: 'Enter your email',
-                        filled: true,
-                        fillColor: Colors.white,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide.none,
-                        ),
-                      ),
-                    ),
+                  CustomContainerTextfromfield(
+                    color: Colors.white,
+                    child: CustomTextFormField(
+                      icon: Icons.email,
+                      labelText: "Email",
+
+                    )
                   ),
 
                   SizedBox(height: 20),
 
 
-                  Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.blue.shade900.withOpacity(0.5),
-                            offset: Offset(4, 4),
-                            blurRadius: 15,
-                            spreadRadius: 1,
-                          ),
-                          BoxShadow(
-                            color: Colors.white.withOpacity(0.5),
-                            offset: Offset(-4, -4),
-                            blurRadius: 15,
-                            spreadRadius: 1,
-                          ),
-                        ]
-                    ),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Reset',
-                        style: TextStyle(color: Colors.white, fontSize: 30),
-                      ),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(Colors.blue.shade200),
-                        fixedSize: MaterialStatePropertyAll(Size(300, 50)),
-                        shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
-                        elevation: MaterialStatePropertyAll(10),
-                        shadowColor: MaterialStatePropertyAll(Colors.blue.shade900),
-                      ),
-                    ),
+                  CustumButton(
+                    child: CustomButtonwithoutcontainer(
+                      text: 'Reset Password',
+                    )
                   ),
                   SizedBox(height: 20),
                   Row(
