@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'componnets/Custom_Buttonwithoutcontainer.dart';
-import 'componnets/Custom_Container_Contain.dart';
-import 'componnets/Custom_Container_Textfromfield.dart';
-import 'componnets/Custom_Container_image.dart';
-import 'componnets/Custom_Text_form_Field.dart';
-import 'componnets/Custum_Button.dart';
+
+import '../componnets_login/Custom_Buttonwithoutcontainer.dart';
+import '../componnets_login/Custom_Container_Contain.dart';
+import '../componnets_login/Custom_Container_Textfromfield.dart';
+import '../componnets_login/Custom_Container_image.dart';
+import '../componnets_login/Custom_Text_form_Field.dart';
+import '../componnets_login/Custum_Button.dart';
 import 'register_screen.dart';
 
 class ResetPass extends StatefulWidget {

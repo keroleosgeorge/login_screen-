@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_apps/componnets/Custom_Container_Contain.dart';
-import 'package:flutter_apps/componnets/Custom_Container_Textfromfield.dart';
-import 'package:flutter_apps/componnets/Custom_Text_form_Field.dart';
-import 'package:flutter_apps/componnets/Custum_Button.dart';
-import 'package:flutter_apps/reset_pass.dart';
-import 'componnets/Custom_Container_image.dart';
-import 'register_screen.dart';
+import 'package:flutter_apps/Login_ui/register_screen.dart';
+import 'package:flutter_apps/Login_ui/reset_pass.dart';
+
+import '../componnets_login/Custom_Container_Contain.dart';
+import '../componnets_login/Custom_Container_Textfromfield.dart';
+import '../componnets_login/Custom_Container_image.dart';
+import '../componnets_login/Custom_Text_form_Field.dart';
+import '../componnets_login/Custum_Button.dart';
+
+
+
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

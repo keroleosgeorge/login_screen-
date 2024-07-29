@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../componnets/Custom_Container_Textfromfield.dart';
-import '../componnets/Custom_Text_form_Field.dart';
+import '../componnets_login/Custom_Container_Textfromfield.dart';
+import '../componnets_login/Custom_Text_form_Field.dart';
 import 'componnets/Custom_CircileAvtar.dart';
 import 'componnets/Custom_chats.dart';
 import 'componnets/Custom_story.dart';
