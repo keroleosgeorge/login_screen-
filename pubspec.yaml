@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  assets_audio_player: ^3.1.1
   flutter:
     sdk: flutter
 
@@ -61,6 +62,16 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/
+     - assets/images/color/
+     - assets/images/numbers/
+     - assets/images/Family/
+     - assets/fonts/
+     - assets/audios/colors/
+     - assets/audios/familymem/
+     - assets/audios/numbers/
+     - assets/audios/phar/
+     - assets/audios/phar/dont_forget_to_subscribe.wav
+     - assets/audios/phar/i_love_anime.wav
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
